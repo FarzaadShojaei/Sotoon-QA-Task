@@ -1,0 +1,236 @@
+{
+	"info": {
+		"_postman_id": "12e5bbfd-6299-48c6-8a16-c5358a60c213",
+		"name": "SotoonQATask",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23160239"
+	},
+	"item": [
+		{
+			"name": "Users List",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ocean.sotoon.ir/storages/storage/neda/roles-management/users",
+					"protocol": "https",
+					"host": [
+						"ocean",
+						"sotoon",
+						"ir"
+					],
+					"path": [
+						"storages",
+						"storage",
+						"neda",
+						"roles-management",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Key List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ocean.sotoon.ir/storages/storage/neda/access/keys",
+					"protocol": "https",
+					"host": [
+						"ocean",
+						"sotoon",
+						"ir"
+					],
+					"path": [
+						"storages",
+						"storage",
+						"neda",
+						"access",
+						"keys"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login Check",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ocean.sotoon.ir/account/login?fromUrl=/storages/storage/neda/access/service-users",
+					"protocol": "https",
+					"host": [
+						"ocean",
+						"sotoon",
+						"ir"
+					],
+					"path": [
+						"account",
+						"login"
+					],
+					"query": [
+						{
+							"key": "fromUrl",
+							"value": "/storages/storage/neda/access/service-users"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Monitoring Check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ocean.sotoon.ir/storages/storage/neda/monitoring",
+					"protocol": "https",
+					"host": [
+						"ocean",
+						"sotoon",
+						"ir"
+					],
+					"path": [
+						"storages",
+						"storage",
+						"neda",
+						"monitoring"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Created Bucket",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://s3.thr1.sotoon.ir/my-bucket",
+					"protocol": "https",
+					"host": [
+						"s3",
+						"thr1",
+						"sotoon",
+						"ir"
+					],
+					"path": [
+						"my-bucket"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Created Key",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://assets-proxy.smartlook.cloud/cache",
+					"protocol": "https",
+					"host": [
+						"assets-proxy",
+						"smartlook",
+						"cloud"
+					],
+					"path": [
+						"cache"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Role Change Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://web-writer.sg.smartlook.cloud/rec/v3/write?rid=gpC2-WV0ungyGdHHMml-b&sid=LhgX5_UeCOTKaMiPtQkHq&vid=ZTT9Z_ozOlPKb0BNwEweK",
+					"protocol": "https",
+					"host": [
+						"web-writer",
+						"sg",
+						"smartlook",
+						"cloud"
+					],
+					"path": [
+						"rec",
+						"v3",
+						"write"
+					],
+					"query": [
+						{
+							"key": "rid",
+							"value": "gpC2-WV0ungyGdHHMml-b"
+						},
+						{
+							"key": "sid",
+							"value": "LhgX5_UeCOTKaMiPtQkHq"
+						},
+						{
+							"key": "vid",
+							"value": "ZTT9Z_ozOlPKb0BNwEweK"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"console.log('leoo')"
+				]
+			}
+		}
+	]
+}
